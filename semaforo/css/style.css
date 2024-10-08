@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* rosso */
+    --sem-color-rosso-on: red;
+    --sem-color-rosso-off: rgb(41, 0, 0);
+    /* giallo */
+    --sem-color-giallo-on: yellow;
+    --sem-color-giallo-off: rgb(77, 77, 0);
+    /* verde */
+    --sem-color-verde-on: green;
+    --sem-color-verde-off: rgb(0, 29, 0);
+}
+
+section{
+    width: 500px;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+.semaforo{
+    width: 75px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.box{
+    height: calc(250px / 3);
+    width: 75px;
+    background-color: black;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div{
+        width: 60px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px gray;
+        /* background-color: var(--sem-color); */
+    }
+}
+
+
+#button{
+    margin: 1rem 0;
+}
