@@ -47,4 +47,12 @@ article{
     font-size: 1.2rem;
     color: white;
     text-align: center;
+    cursor: move; /* fallback: no `url()` support or images disabled */
+    
+    cursor: grab; /* W3C standards syntax, all modern browser */
+    
+}
+
+.task:active{
+    cursor: grabbing;
 }

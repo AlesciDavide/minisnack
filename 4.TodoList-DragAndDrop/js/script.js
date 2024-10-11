@@ -31,6 +31,8 @@ function dragStart(){
 
 function dragEnd(){
     console.log("dragEnd");
+    dragEl.style.display = "block"
+    dragEl = null;
 };
 
 /* funzioni colonne */
@@ -52,3 +54,6 @@ function dragDrop(){
     console.log("dragDrop");
     this.append(dragEl);
 };
+
+
+/* funzione per il cursore */
