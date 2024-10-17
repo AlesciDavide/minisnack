@@ -27,7 +27,7 @@ const dataList = [
         id: 1,
         nome: "Aperto",
         tasks: [ {
-            id: 0,
+            id: 4,
             testo: "prova id",
         },]
     },
@@ -76,18 +76,20 @@ function dragStart(){
     const indexTask = dataList[indexColonna].tasks.findIndex(task =>{
         return task.id == this.getAttribute("data-task");
     })
-
+    console.log(dataList);
     dragData = dataList[indexColonna].tasks.splice(indexTask, 1);
+    console.log(dataList);
 };
 
 function dragEnd(){
     console.log("dragEnd");
     dragEl.style.display = "block"
     dragEl = null;
+console.log(dataList);
 
-    dataList[this.parentElement.getAttribute("data-colonna")].tasks.push(dragData);
+    dataList[this.parentElement.getAttribute("data-colonna")].tasks.push(dragData[0]);
     console.log(dataList, dragData);
-    
+    console.log(dataList);
 };
 
 /* funzioni colonne */
