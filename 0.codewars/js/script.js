@@ -112,10 +112,10 @@ console.log(ruolideDue , "metodo 2");
 
 /* metodo 3 */
 let ruoloDevTre = [];
-ruolipersone.forEach((p) =>{
-  if(p.ruolo === "dev"){
-    ruoloDevTre.push(p);
+for(let i = 0; i < ruolipersone.length; i++){
+  if(ruolipersone[i].ruolo === "dev"){
+    ruoloDevTre.push(ruolipersone[i]);
   }
-})
+}
 
 console.log(ruoloDevTre, "metodo 3")
